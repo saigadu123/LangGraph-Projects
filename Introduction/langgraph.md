@@ -15,7 +15,7 @@ LangGraph is an open-source framework for building knowledge graphs by integrati
 
 # Graph & State Machine
 
-![state-machine](images/State-Machine.png)
+![state-machine](../images/State-Machine.png)
 
 A Graph is used to describe the relationships. A state machine consists of states where there are transitions form one state to another state.States are represented as nodes and transiions are represented as edges.
 
