@@ -56,3 +56,15 @@ Use triggers to activate specific parts of the graph.
 Track the state, configurations, and metadata throughout the workflow.
 
 ![flow-tasks](../images/Flow%20-2.png)
+
+# Core components of LangGraph 
+
+## Nodes 
+Nodes are the any python functions that contains determenistic code or the code that call LLMs.
+
+## Edges 
+Edges connect those nodes within the Graph execution.
+
+## Conditional Edges 
+Conditional edges are used to make decisions whether to go to node A or node B which is more dynamic and flexible.
+
