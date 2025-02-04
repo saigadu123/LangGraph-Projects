@@ -14,7 +14,15 @@ react_prompt: PromptTemplate = hub.pull("hwchase17/react")
 
 @tool
 def triple(num: float)->float:
+    """ 
+    : param num : a number to triple
+    : return : the number tripled -> multiplied by 3
+    """
     return 3*float(num)
 
 tools = [TavilySearchResults(max_results=1),triple]
+
+llm = ChatOpenAI(model="gpt-3.5-turbo-1106")
+
+react_agent_runnable = create_react_agent(llm,tools,react_prompt)
 
