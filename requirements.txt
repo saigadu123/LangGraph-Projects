@@ -7,4 +7,5 @@ langgraph
 grandalf
 langchain-community
 pytest
-langchain-chroma
+bs4
+chromadb
