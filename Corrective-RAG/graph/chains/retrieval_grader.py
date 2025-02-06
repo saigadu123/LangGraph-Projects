@@ -12,13 +12,13 @@ class GradeDocuments(BaseModel):
     """ Binary score for relevance check for the retrieved documents """
 
     binary_score: str = Field(
-        description = "Given the following document and question, determine whether the document contains relevant information to answer the question. Your response should be either 'yes' or 'no' "
+        description = "Documents are relevant to the question, 'yes' or 'no' "
     )
 
 structured_llm_grader = llm.with_structured_output(GradeDocuments)
 
 system = """ You are a grader assessing relevance of a retrieved document to a user question.\n
-            If the document contains keyword(s) or words of question or  semantically same to the question, document is relavant to the question.
+            If the retrieved documents are someover related to the question, then that document is relavant to the question.
             
           """
 
