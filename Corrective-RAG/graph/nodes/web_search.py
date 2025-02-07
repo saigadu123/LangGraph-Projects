@@ -9,7 +9,7 @@ load_dotenv()
 
 web_search_tool = TavilySearchResults(max_results=3)
 
-def web_search(state: GraphState)->Dict[str,Any]:
+def web_search_node(state: GraphState)->Dict[str,Any]:
     print("--Web Search--")
     question = state["question"]
     documents = state["documents"]
@@ -26,7 +26,6 @@ def web_search(state: GraphState)->Dict[str,Any]:
 
     return {"question":question,"documents":documents}
 
-if __name__ == "__main__":
-    web_search({"question":"agent memory","documents":None})
+
 
 
