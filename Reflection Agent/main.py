@@ -33,7 +33,7 @@ builder.add_conditional_edges(GENERATE,should_continue)
 builder.add_edge(REFLECT,GENERATE)
 
 graph = builder.compile()
-print(graph.get_graph().draw_mermaid())
+graph.get_graph().draw_mermaid_png(output_file_path = "graph.png")
 # graph.get_graph().print_ascii()
 
 

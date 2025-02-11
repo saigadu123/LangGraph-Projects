@@ -9,3 +9,4 @@ langchain-community
 pytest
 bs4
 chromadb
+langgraph-checkpoint-sqlite
